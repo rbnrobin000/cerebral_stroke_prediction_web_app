@@ -12,7 +12,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 
 # loading the saved model
-loaded_model = pickle.load(open('rbnrobin000/cerebral_stroke_prediction_web_app/trained_model.sav', 'rb'))
+loaded_model = pickle.load(open('trained_model.sav', 'rb'))
 
 
 # sidebar for navigation
