@@ -55,7 +55,8 @@ def main():
     if (selected == 'Cerebral Stroke'):
         
         # giving a title
-        st.title('Cerebral Stroke Prediction')
+        #st.title('Cerebral Stroke Prediction')
+        st.markdown("<h1 style='text-align: center; color: grey;'>Cerebral Stroke Prediction</h1>", unsafe_allow_html=True)
         
         
         # getting the input data from the user
