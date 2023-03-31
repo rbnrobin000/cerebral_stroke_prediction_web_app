@@ -59,17 +59,28 @@ def main():
         
         
         # getting the input data from the user
+        col1, col2 = st.columns(2)
     
-        gender = st.text_input("Enter gender (Male/Female/Other): ")
-        age = st.text_input("Enter age: ")
-        hypertension = st.text_input("Enter hypertension (1 for Yes, 0 for No): ")
-        heart_disease = st.text_input("Enter heart disease (1 for Yes, 0 for No): ")
-        ever_married = st.text_input("Enter ever married (Yes/No): ")
-        work_type = st.text_input("Enter work type (Govt_job/Private/Self-employed/Children/Never_worked): ")
-        residence_type = st.text_input("Enter residence type (Urban/Rural): ")
-        avg_glucose_level = st.text_input("Enter average glucose level: ")
-        bmi = st.text_input("Enter BMI: ")
-        smoking_status = st.text_input("Enter smoking status (formerly smoked/never smoked/smokes/Unknown): ")
+        with col1:
+            gender = st.text_input("Enter gender (Male/Female/Other): ")
+        with col1:
+            age = st.text_input("Enter age: ")
+        with col1:
+            hypertension = st.text_input("Enter hypertension (1 for Yes, 0 for No): ")
+        with col1:
+            heart_disease = st.text_input("Enter heart disease (1 for Yes, 0 for No): ")
+        with col1:
+            ever_married = st.text_input("Enter ever married (Yes/No): ")
+        with col2:
+            work_type = st.text_input("Enter work type (Govt_job/Private/Self-employed/Children/Never_worked): ")
+        with col2:
+            residence_type = st.text_input("Enter residence type (Urban/Rural): ")
+        with col2:
+            avg_glucose_level = st.text_input("Enter average glucose level: ")
+        with col2:
+            bmi = st.text_input("Enter BMI: ")
+        with col2:
+            smoking_status = st.text_input("Enter smoking status (formerly smoked/never smoked/smokes/Unknown): ")
     
     # Create an empty pandas dataframe with the given columns
     input_data = pd.DataFrame(columns=['gender', 'age', 'hypertension', 'heart_disease', 'ever_married', 'work_type', 'Residence_type', 'avg_glucose_level', 'bmi', 'smoking_status'])
